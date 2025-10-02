@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <title>วัตถุดิบ</title>
   
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="css.css" rel="stylesheet" type="text/css" />
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
@@ -45,6 +46,24 @@
       display: block;
     }
 
+        @media (max-width: 600px) {
+      .grid { 
+        grid-template-columns: 1fr; 
+      }
+      .header {
+        font-size: 16px; 
+        padding: 10px;
+      }
+      .navbar button {
+        font-size: 12px;
+      }
+      .popup-content {
+        width: 90%; 
+      }
+      #summaryChart {
+        width: 100% !important; 
+      }
+          
   </style>
   
 </head>
@@ -360,6 +379,7 @@
   </script>
 </body>
 </html>
+
 
 
 
